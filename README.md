@@ -1,1 +1,1 @@
-# caddy custom image
+# caddy distroless and rootless
