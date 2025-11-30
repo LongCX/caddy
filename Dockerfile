@@ -10,6 +10,7 @@ COPY --chown=nonroot:nonroot --from=builder /data /app/dt/data
 COPY --chown=nonroot:nonroot --from=builder /config /app/dt/config
 COPY --chown=nonroot:nonroot --from=builder /logs_caddy /logs_caddy
 COPY --chown=nonroot:nonroot --from=builder /other /app/dt/other
+COPY --chown=nonroot:nonroot --from=builder /usr/bin/caddy /app/caddy
 
 COPY Caddyfile /etc/caddy/Caddyfile
 
