@@ -1,8 +1,8 @@
 FROM caddy:builder AS builder
 RUN xcaddy build \
     --with github.com/caddyserver/transform-encoder \
-    --with github.com/porech/caddy-maxmind-geolocation \
-    --with github.com/mholt/caddy-ratelimit
+    --with github.com/LongCX/caddy-ipblock
+
 RUN mkdir -p /data /config /logs_caddy /other /app
 
 FROM gcr.io/distroless/static:nonroot
